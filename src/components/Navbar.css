@@ -1,0 +1,18 @@
+.Navbar-header {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 2em;
+    justify-content: right;
+    margin-right: 2em;
+}
+
+.Navbar-header a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.Navbar-header a:hover {
+    color: rgb(67, 15, 15);
+    font-weight: bold;
+}
