@@ -10,12 +10,12 @@
     margin-right: 2em;
 }
 
-.Navbar-header a {
+.Navbar-list a {
     color: inherit;
     text-decoration: none;
 }
 
-.Navbar-header a:hover {
+.Navbar-list a:hover {
     color: rgb(67, 15, 15);
     font-weight: bold;
 }

@@ -1,6 +1,6 @@
 .Home-banner {
     display: flex;
-    padding: 8em 0;
+    padding: 12em 0;
     justify-content: center;
     align-items: center;
     background-color: rgb(203, 203, 203);
@@ -22,7 +22,25 @@
 }
 
 .Home-about {
-    padding: 2em 3em;
+    padding: 8em 12em;
+    background-color: rgb(227, 227, 227);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em;
+}
+
+.Home-about-text {
+    flex: 2 0 70%;
+}
+
+.Home-about img {
+    max-width: 40%;
+    max-height: 40%;
+}
+
+.Home-fun-facts {
+    padding: 3em 5em 5em;
 }
 
 .Home-info-cards {
@@ -38,7 +56,7 @@
 }
 
 .Home-card img {
-    max-height:70%;
-    max-width:70%;
+    max-height: 70%;
+    max-width: 70%;
     margin-left: 2em;
 }
