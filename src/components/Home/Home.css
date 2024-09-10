@@ -1,0 +1,44 @@
+.Home-banner {
+    display: flex;
+    padding: 8em 0;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(203, 203, 203);
+}
+
+.Home-banner-text {
+    text-align: center;
+}
+
+.Home-banner-text h1 {
+    font-size: xxx-large;
+    margin: 0;
+}
+
+.Home-banner-text h2 {
+    font-weight: 200;
+    font-size: x-large;
+    margin: 0;
+}
+
+.Home-about {
+    padding: 2em 3em;
+}
+
+.Home-info-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.Home-card {
+    border: medium solid gray;
+    flex: 1 1 25%;
+    padding: 2em;
+}
+
+.Home-card img {
+    max-height:70%;
+    max-width:70%;
+    margin-left: 2em;
+}

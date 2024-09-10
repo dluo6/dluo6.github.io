@@ -5,7 +5,7 @@ function Navbar() {
     const links = ['Projects', 'Resume', 'Contact']
     return (
         <div>
-            <ul className='Navbar-header'>
+            <ul className='Navbar-list Navbar-header'>
                 <li><Link to='/'>Home</Link></li>
                 {links.map((page) => <li><Link to={`/${page}`}>{page}</Link></li>)}
             </ul>
