@@ -8,16 +8,11 @@
 
 .Home-banner-text {
     text-align: center;
+    height: 25vh;
 }
 
 .Home-banner-text h1 {
     font-size: xxx-large;
-    margin: 0;
-}
-
-.Home-banner-text h2 {
-    font-weight: 200;
-    font-size: x-large;
     margin: 0;
 }
 
@@ -59,4 +54,47 @@
     max-height: 70%;
     max-width: 70%;
     margin-left: 2em;
+    letter-spacing: .15em;
+}
+
+.Home-banner-text h2 {
+    line-height: 2em;
+    letter-spacing: .15em;
+    font-weight: 200;    
+    font-size: x-large;
+}
+
+.typing, .typed {
+    display: inline-block;
+    min-height: 1em;
+}
+
+.typing {
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    animation: 
+        typing 4s steps(35, end),
+        blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+  
+  /* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
+.typed {
+    margin: 0;
+    border-right: .15em solid orange;
+    text-shadow:0px 0px 1px black;
+    animation: 
+        blink-caret .75s step-end infinite;
 }

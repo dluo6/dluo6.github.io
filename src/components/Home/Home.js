@@ -1,8 +1,36 @@
+import React, { useState, useEffect } from 'react';
 import './Home.css'
 import melon from '../../assets/melon.png';
 
 function Home() {
+    const completeText = 'Learning and growing, one line at a time';
+    const typingText = '<h2>'+completeText+'</h2>';
 
+    const [displayedText, setDisplayedText] = useState('');
+   
+    useEffect(() => {
+        const typingAnimation = (text, callback) => {
+            var index = 0;
+            var display = ''
+            const intervalId = setInterval(() => {
+                if (index < text.length) {
+                    display += text[index];
+                    setDisplayedText(<h2 className='typing'>{display}</h2>);
+                    index++;
+                } else {
+                    clearInterval(intervalId);
+                    callback();
+                }
+            }, Math.random()*50 + 100);
+        };
+    
+        typingAnimation(typingText, () => {
+            setTimeout(() => {
+                setDisplayedText(<h2 className='typed'>{completeText}</h2>);
+            }, 1000);
+        });
+    }, []);
+    
     const cards = [
         {
             image: melon,
@@ -37,7 +65,7 @@ function Home() {
             <div className='Home-banner'>
                 <div className='Home-banner-text'>
                     <h1>Hello! I am Danlin Luo</h1>
-                    <h2>{'<h2>Computer science enthusiast and art hobbyist</h2>'}</h2>
+                    {displayedText}
                 </div>
             </div>
             <div className='Home-about'>
