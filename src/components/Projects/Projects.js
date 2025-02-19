@@ -1,6 +1,8 @@
+import './Projects.css';
+
 function Projects() {
     return (
-        <div>
+        <div id='Projects'>
             Projects
         </div>
     );

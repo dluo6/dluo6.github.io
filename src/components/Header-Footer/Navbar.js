@@ -1,13 +1,13 @@
-import { Link } from 'react-router-dom';
 import './Navbar.css'
 
 function Navbar() {
-    const links = ['Projects', 'Resume', 'Contact']
+    const links = ['Home', 'Resume', 'Projects', 'Contact']
     return (
         <div>
-            <ul className='Navbar-list Navbar-header'>
-                <li><Link to='/'>Home</Link></li>
-                {links.map((page) => <li><Link to={`/${page}`}>{page}</Link></li>)}
+            <ul className='Navbar-list'>
+                {links.map((section) => <li>
+                    <p onClick={() => document.getElementById(section).scrollIntoView()}>{section}</p>
+                </li>)}
             </ul>
         </div>
     )

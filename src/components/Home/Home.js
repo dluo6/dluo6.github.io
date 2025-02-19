@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import './Home.css'
+import './Home.css';
 import melon from '../../assets/melon.png';
 
 function Home() {
@@ -48,20 +48,20 @@ function Home() {
             image: melon,
             imageAlt: "melon",
             text: "Hobbies",
-            description: "Outside of my professional life, you'll find me sometimes indulging in art, which is why I'm aiming to create all of the images used by my portfolio! I also enjoy other hobbies such as singing, going to the gym, and cooking."
+            description: "Outside of my professional life, you'll find me dabbling in a variety of creative hobbies, such as singing, playing the piano/guitar, drawing, and knitting. I also try to balance my life with other activities such as going to the gym and cooking."
         }
     ]
 
     const renderInfoCard = (image, imageAlt, text, description) => (
         <div className='Home-card'>
-            <img src={image} alt={imageAlt}/>
+            <img src={image} alt={imageAlt}/><br />
             <b>{text}</b>
             <p>{description}</p>
         </div>
     )
 
     return (
-        <div>
+        <div id='Home'>
             <div className='Home-banner'>
                 <div className='Home-banner-text'>
                     <h1>Hello! I am Danlin Luo</h1>
@@ -71,13 +71,11 @@ function Home() {
             <div className='Home-about'>
                 <div className='Home-about-text'>
                     <h1>About Me</h1>
-                    <p>Hi, I’m Danlin Luo, a computer science major at McGill University with a passion for technology, problem-solving, and creative projects. My academic journey has been enriched by hands-on experience, from implementing environmental initiatives at McGill to researching influencer marketing under Professor Hyunji So.
+                    <p>Hi, I’m Danlin Luo, a computer science major at McGill University with a passion for technology, problem-solving, and creative projects. My academic journey has been enriched by hands-on experience, such as implementing environmental initiatives, researching influencer marketing under Professor Hyunji So, or contributing to the learning of other students through being a TEAM mentor.
                     <br /><br />
-                    I’ve developed a strong foundation in software development through my internships and projects. At Citibank, I worked as a Software Development Analyst, where I deployed front-end changes and developed internal tools.
+                    I'm always looking for opportunities to grow in various ways, whether it is exploring new skills, tinkering with projects, or taking a deeper dive into existing knowledge while maintaining balance in my life. It is fulfilling to make small steps daily, knowing that once I look back, I will have made much more progress than I could have thought would be possible.
                     <br /><br />
-                    Outside of work, I love participating in hackathons, such as McHacks and Code.Jam(), where I’ve built solutions ranging from productivity apps to trucking notification services. Fluent in English, advanced in Mandarin, and with an intermediate grasp of Spanish, I enjoy exploring new languages and cultures in my free time.
-                    <br /><br />
-                    Feel free to connect with me if you’d like to collaborate or chat about tech innovations!
+                    Scroll further to see more about me, and feel free to connect with me through LinkedIn!
                     </p>
                 </div>
                 <img src={melon} alt='watermelon'/>

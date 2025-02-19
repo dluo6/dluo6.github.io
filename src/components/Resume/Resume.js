@@ -1,6 +1,8 @@
+import './Resume.css';
+
 function Resume() {
     return (
-        <div>
+        <div id='Resume'>
             Resume
         </div>
     );
